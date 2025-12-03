@@ -15,8 +15,9 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - name: Download a Build Artifact
-      uses: actions/download-artifact@v6.0.0
+      uses: dawidd6/action-download-artifact@v2
       with:
+          workflow: cibuild.yml
           # Artifact name
           name: publish
           # Destination path
